@@ -10,4 +10,10 @@ Mac: https://docs.docker.com/desktop/mac/install/
 
 2 - Enable Kubernetes :
 
-Docker Desktop includes a standalone Kubernetes server that runs on your local machine. Right before you enable it, you need to increase the resources a little bit from the initial default configuration.
+Docker Desktop includes a standalone Kubernetes server that runs on your local machine. 
+Right before you enable it, you need to adjust
+the resources a little bit from the initial default configuration. (Settings -> Resources)
+
+<img src="./images/docker1.png">
+
+
