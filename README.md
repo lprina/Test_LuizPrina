@@ -34,7 +34,7 @@ To enable Kubernetes on Docker Desktop:
 ![Docker settings screenshot](images/docker2.png)
 
 
-wDSDaasd
+Click on Install button:
 
-asdasdasd
+![Docker settings screenshot](images/docker3.png)
 
