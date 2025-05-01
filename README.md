@@ -109,7 +109,14 @@ Start the proxy (inside the /Test_LuizPrinaw folder) with the following command:
 ```bash
 ./scripts/start_kubectl_proxy.sh 
 ```
- You are going to see these:
+PS:Script file was uploaded with +x permission, but in case something goes wrong:
+
+```bash
+chmod +x ./scripts/start_kubectl_proxy.sh && ./scripts/start_kubectl_proxy.sh
+
+```
+
+You are going to see these:
 
 ![Proxy settings screenshot](images/proxy1.png)
 
