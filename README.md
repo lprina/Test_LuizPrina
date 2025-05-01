@@ -150,5 +150,6 @@ percentage symbol for correctness!
 
 Next, use the token to login to the dashboard:
 
+![Dashboard settings screenshot](images/dashboard4.png)
 
 
