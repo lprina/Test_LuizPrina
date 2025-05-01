@@ -126,5 +126,20 @@ Click on the link above to be redirected to the following page:
 
 ![Dashboard settings screenshot](images/dashboard2.png)
 
+**Step 6.3: Authenticate to the Dashboard**
+Get a Bearer Token: To log in to the Dashboard, you need to generate a bearer token. 
+You can create a service account and get a token by following these steps:
+
+```bash
+kubectl apply -f ./yaml/dashboard-adminuser.yaml
+kubectl apply -f ./yaml/dashboard-clusterrole.yaml
+kubectl apply -f ./yaml/dashboard-secret.yaml
+```
+
+And to generate the token that will be used to access the dashboard, you can run:
+
+```bash
+kubectl get secret admin-user -n kubernetes-dashboard -o jsonpath={".data.token"} | base64 -d
+```
 
 
