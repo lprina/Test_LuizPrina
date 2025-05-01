@@ -59,3 +59,10 @@ After the installation, you can verify the installation by running
 ```bash
 kubectl version
 ```
+**Configure Kubernetes Context**
+- Kubernetes uses contexts to access different clusters. Docker Desktop sets a context named docker-desktop.
+- To switch to this context, use:
+
+```bash
+kubectl config use-context docker-desktop.
+```
