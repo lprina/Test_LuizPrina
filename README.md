@@ -44,7 +44,7 @@ For macOS:
 Homebrew: If you have Homebrew installed, you can simply run:
 
 ```bash
-brew install helm
+brew install kubectl
 ```
 
 For Windows:
@@ -54,5 +54,8 @@ kubetcl by running:
 ```bash
 choco install kubernetes-cli
 ```
+After the installation, you can verify the installation by running
 
-
+```bash
+kubectl version
+```
