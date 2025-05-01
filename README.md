@@ -2,7 +2,7 @@
 
 **Steps for Setup**
 
-1 - Install Docker Desktop on your machine by following the steps on the links below:
+**1 - Install Docker Desktop on your machine by following the steps on the links below:**
 
 Windows: https://docs.docker.com/desktop/windows/install/
 
@@ -38,7 +38,7 @@ Click on Install button:
 
 ![Docker settings screenshot](images/docker3.png)
 
-**Getting kubectl installed on your PC:**
+**3 - Getting kubectl installed on your PC:**
 
 For macOS:
 Homebrew: If you have Homebrew installed, you can simply run:
@@ -59,10 +59,24 @@ After the installation, you can verify the installation by running
 ```bash
 kubectl version
 ```
-**Configure Kubernetes Context**
+**4 - Configure Kubernetes Context**
 - Kubernetes uses contexts to access different clusters. Docker Desktop sets a context named docker-desktop.
 - To switch to this context, use:
 
 ```bash
 kubectl config use-context docker-desktop.
+```
+**5 - Getting Helm Chart installed on your PC**
+
+For macOS:
+Homebrew: If you have Homebrew installed, you can simply run:
+```bash
+brew install helm
+```
+
+For Windows:
+Chocolatey: If you use Chocolatey as your package manager, you can install Helm by running:
+
+```bash
+choco install kubernetes-helm
 ```
