@@ -104,7 +104,16 @@ And what you’ll see should look like this.
 **Step 6.2: Access the Dashboard**
 
 Start the Proxy: The Kubernetes Dashboard is accessed via a proxy server. 
-Start the proxy with the following command:
+Start the proxy (inside the /Test_LuizPrinaw folder) with the following command:
+
+```bash
+./scripts/start_kubectl_proxy.sh 
+```
+ You are going to see these:
+
+![Proxy settings screenshot](images/proxy1.png)
+
+![Proxy settings screenshot](images/proxy2.png)
 
 
 
