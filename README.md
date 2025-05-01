@@ -82,6 +82,7 @@ choco install kubernetes-helm
 ```
 
 **6 - Deploying Kubernetes Dashboard**
+
 Kubernetes Dashboard provides a user-friendly web-based interface to manage your Kubernetes cluster. 
 It allows you to view and manage your cluster resources and applications, and also provides basic troubleshooting capabilities. 
 Here’s how you can deploy the Kubernetes Dashboard:
