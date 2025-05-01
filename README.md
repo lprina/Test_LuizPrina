@@ -122,5 +122,9 @@ You are going to see these:
 
 ![Proxy settings screenshot](images/proxy2.png)
 
+Click on the link above to be redirected to the following page:
+
+![Dashboard settings screenshot](images/dashboard2.png)
+
 
 
