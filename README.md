@@ -38,3 +38,21 @@ Click on Install button:
 
 ![Docker settings screenshot](images/docker3.png)
 
+**Getting kubectl installed on your PC:**
+
+For macOS:
+Homebrew: If you have Homebrew installed, you can simply run:
+
+```bash
+brew install helm
+```
+
+For Windows:
+Chocolatey: If you use Chocolatey as your package manager, you can install 
+kubetcl by running:
+
+```bash
+choco install kubernetes-cli
+```
+
+
