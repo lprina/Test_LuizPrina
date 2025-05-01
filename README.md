@@ -87,7 +87,7 @@ Kubernetes Dashboard provides a user-friendly web-based interface to manage your
 It allows you to view and manage your cluster resources and applications, and also provides basic troubleshooting capabilities. 
 Here’s how you can deploy the Kubernetes Dashboard:
 
-Step 6.1: Deploy the Dashboard
+**Step 6.1: Deploy the Dashboard**
 
 Run the Deployment Command: To deploy the Kubernetes Dashboard, use kubectl to deploy the yaml 
 configuration:
@@ -101,7 +101,7 @@ And what you’ll see should look like this.
 
 ![Dashboard settings screenshot](images/dashboard1.png)
 
-Step 6.2: Access the Dashboard
+**Step 6.2: Access the Dashboard**
 
 Start the Proxy: The Kubernetes Dashboard is accessed via a proxy server. 
 Start the proxy with the following command:
