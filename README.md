@@ -142,4 +142,13 @@ And to generate the token that will be used to access the dashboard, you can run
 kubectl get secret admin-user -n kubernetes-dashboard -o jsonpath={".data.token"} | base64 -d
 ```
 
+![Dashboard settings screenshot](images/dashboard3.png)
+
+PLEASE NOTE ⚠️:
+At the end of the token generated is a % symbol, ensure you copy the token without including the 
+percentage symbol for correctness!
+
+Next, use the token to login to the dashboard:
+
+
 
