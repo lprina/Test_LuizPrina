@@ -81,6 +81,8 @@ Chocolatey: If you use Chocolatey as your package manager, you can install Helm 
 choco install kubernetes-helm
 ```
 
+
+
 **6 - Deploying Kubernetes Dashboard**
 
 Kubernetes Dashboard provides a user-friendly web-based interface to manage your Kubernetes cluster. 
