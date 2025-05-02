@@ -109,7 +109,36 @@ The output should be:
 
 **7 - Deploy Spark** 
 
+7.1: Create a namespace for spark:
+```bash
+kubectl create namespace spark
+```
 
+7.2: Install Spark using Helm:
+
+```bash
+ helm install spark bitnami/spark -f ./yaml/spark-values.yaml --namespace spark
+```
+
+7.3: Enable de UI:
+
+```bash
+kubectl port-forward --namespace spark svc/spark-master-svc 8080:80
+```
+
+testar job:
+
+1- copiar o jar
+
+
+3 - este comando funcionou:
+```bash
+kubectl exec -ti -n spark spark-worker-0 -- spark-submit \
+  --master spark://spark-master-svc:7077 \
+  --class org.apache.spark.examples.SparkPi \
+  /tmp/spark-examples_2.12-3.5.5.jar 5
+
+```
 
 **6 - Deploying Kubernetes Dashboard**
 
