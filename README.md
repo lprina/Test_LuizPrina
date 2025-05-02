@@ -107,7 +107,7 @@ The output should be:
 
 ![Kafka settings screenshot](images/kafka2.png)
 
-
+**7 - Deploy Spark** 
 
 
 
