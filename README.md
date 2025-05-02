@@ -97,6 +97,18 @@ You can see an output like this:
 
 ![Kafka settings screenshot](images/kafka.png)
 
+6.3: Check the services to ensure that Kafka Is accessible:
+
+```bash
+kubectl get svc -n kafka
+```
+
+The output should be:
+
+![Kafka settings screenshot](images/kafka2.png)
+
+
+
 
 
 **6 - Deploying Kubernetes Dashboard**
