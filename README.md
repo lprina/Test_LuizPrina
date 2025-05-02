@@ -80,6 +80,22 @@ Chocolatey: If you use Chocolatey as your package manager, you can install Helm 
 ```bash
 choco install kubernetes-helm
 ```
+ **6 - Deploy Kafka (Bitnami)**
+
+6.1:Add Helm repo and upodate:
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+```
+6.2: Install Kafka using Helm:
+
+```bash
+ helm install kafka bitnami/kafka -f ./yaml/kafka-values.yaml --namespace kafka --create-namespace
+```
+
+You can see an output like this:
+
+![Kafka settings screenshot](images/kafka.png)
 
 
 
