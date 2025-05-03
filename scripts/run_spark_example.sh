@@ -3,7 +3,8 @@
 # Set working directories relative to the script location
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-JAR_DIR="$PROJECT_ROOT/jar/spark-3.5.5-bin-hadoop3/examples/jars"
+# Update JAR_DIR to point to the 'scripts' folder where the JAR is now located
+JAR_DIR="$PROJECT_ROOT/scripts"
 JAR_FILE="spark-examples_2.12-3.5.5.jar"
 JAR_PATH="$JAR_DIR/$JAR_FILE"
 
@@ -22,11 +23,11 @@ else
     echo "Using worker pod: $WORKER_POD"
 fi
 
-# Step 2: Copy example JAR
+# Step 2: Copy example JAR to the Spark worker pod
 echo "Copying JAR to pod..."
 kubectl cp "$JAR_PATH" "$NAMESPACE/$WORKER_POD:$DEST_PATH"
 
-# Step 3: Run Spark job
+# Step 3: Run Spark job using the JAR file
 echo "Running SparkPi example..."
 kubectl exec -n "$NAMESPACE" -it "$WORKER_POD" -- spark-submit \
   --master "$MASTER_URL" \
