@@ -126,17 +126,16 @@ kubectl create namespace spark
 kubectl port-forward --namespace spark svc/spark-master-svc 8080:80
 ```
 
-testar job:
+**7.4: Test a job:**
 
-1- copiar o jar
-
-
-3 - este comando funcionou:
 ```bash
-kubectl exec -ti -n spark spark-worker-0 -- spark-submit \
-  --master spark://spark-master-svc:7077 \
-  --class org.apache.spark.examples.SparkPi \
-  /tmp/spark-examples_2.12-3.5.5.jar 5
+ ./scripts/run_spark_example.sh
+```
+
+**7.5: You may see the following GUI when you access 127.0.0.1:8080**
+
+![Spark settings screenshot](images/spark.png)
+
 
 ```
 
