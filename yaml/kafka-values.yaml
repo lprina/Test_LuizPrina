@@ -11,3 +11,34 @@ resources:
   limits:
     cpu: "1"
     memory: "2Gi"
+
+listeners:
+  external:
+    enabled: true
+    port: 9092
+    protocol: SASL_PLAINTEXT
+    advertised:
+      host: kafka.kafka.svc.cluster.local
+      port: 9092
+  internal:
+    enabled: true
+    port: 9093
+    protocol: SASL_PLAINTEXT
+    advertised:
+      host: kafka.kafka.svc.cluster.local
+      port: 9093
+
+interBrokerListenerName: internal
+
+service:
+  type: ClusterIP
+  name: kafka
+  externalPort: 9092
+  internalPort: 9093
+  headless: true
+
+advertised:
+  external:
+    host: kafka-external.example.com
+    port: 9092
+
