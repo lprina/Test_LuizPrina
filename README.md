@@ -131,15 +131,18 @@ kubectl port-forward --namespace spark svc/spark-master-svc 8080:80
 ```bash
  ./scripts/run_spark_example.sh
 ```
+PS: script file was uploaded with +x permission, but if something goes wrong:
+```bash
+chmod +x scripts/run_spark_example.sh
+```
 
 **7.5: You may see the following GUI when you access 127.0.0.1:8080**
 
 ![Spark settings screenshot](images/spark.png)
 
 
-```
 
-**6 - Deploying Kubernetes Dashboard**
+**8 - Deploying Kubernetes Dashboard**
 
 Kubernetes Dashboard provides a user-friendly web-based interface to manage your Kubernetes cluster. 
 It allows you to view and manage your cluster resources and applications, and also provides basic troubleshooting capabilities. 
